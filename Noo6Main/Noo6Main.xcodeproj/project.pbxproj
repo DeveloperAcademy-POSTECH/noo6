@@ -11,6 +11,7 @@
 		7953083127FD7E78000D40DB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7953083027FD7E78000D40DB /* ContentView.swift */; };
 		7953083327FD7E79000D40DB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7953083227FD7E79000D40DB /* Assets.xcassets */; };
 		7953083627FD7E79000D40DB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7953083527FD7E79000D40DB /* Preview Assets.xcassets */; };
+		7953083D27FDC1CA000D40DB /* ClearView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7953083C27FDC1CA000D40DB /* ClearView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		7953083027FD7E78000D40DB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		7953083227FD7E79000D40DB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7953083527FD7E79000D40DB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		7953083C27FDC1CA000D40DB /* ClearView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClearView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +55,7 @@
 			children = (
 				7953082E27FD7E78000D40DB /* Noo6MainApp.swift */,
 				7953083027FD7E78000D40DB /* ContentView.swift */,
+				7953083C27FDC1CA000D40DB /* ClearView.swift */,
 				7953083227FD7E79000D40DB /* Assets.xcassets */,
 				7953083427FD7E79000D40DB /* Preview Content */,
 			);
@@ -137,6 +140,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7953083D27FDC1CA000D40DB /* ClearView.swift in Sources */,
 				7953083127FD7E78000D40DB /* ContentView.swift in Sources */,
 				7953082F27FD7E78000D40DB /* Noo6MainApp.swift in Sources */,
 			);
