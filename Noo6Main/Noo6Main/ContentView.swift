@@ -9,13 +9,14 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        NavigationView{
-            NavigationLink(destination: ClearView()){
-                Text("Hello")
-                    .padding()
-            }
-        }.navigationBarHidden(true)
-        
+        VStack{
+            NavigationView{
+                NavigationLink(destination: ClearView()){
+                    Text("Hello")
+                        .padding()
+                }
+            }.navigationBarHidden(true)
+        }
     }
 }
 

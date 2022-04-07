@@ -35,20 +35,22 @@ struct ClearView: View {
             }, label: {
                 NavigationLink(destination: ContentView()){
                     Text("다른 가이드 배우기")
+                        .foregroundColor(Color.white)
                 }
             })
-            .frame(width: 300, height: 20, alignment: .center)
+            .frame(width: 300, height: 18, alignment: .center)
             .padding()
-            .background(Color(red: 0.8, green: 0.8, blue: 0.8))
+            .background(Color(red: 0, green: 0.5, blue: 1))
             .clipShape(RoundedRectangle(cornerRadius: 10, style: .circular))
             
             
             Button(action: shareButton){
                 Text("이미지를 다른 사람에게 공유하기")
+                    .foregroundColor(Color.white)
             }
-            .frame(width: 300, height: 20, alignment: .center)
+            .frame(width: 300, height: 18, alignment: .center)
             .padding()
-            .background(Color(red: 0.8, green: 0.8, blue: 0.8))
+            .background(Color(red: 0, green: 0.5, blue: 1))
             .clipShape(RoundedRectangle(cornerRadius: 10, style: .circular))
             
             Button(action: {
@@ -56,6 +58,7 @@ struct ClearView: View {
             }, label: {
                 NavigationLink(destination: ContentView()){
                     Text("홈으로 돌아가기")
+                        .foregroundColor(Color.blue)
                 }
             })
             .padding()
