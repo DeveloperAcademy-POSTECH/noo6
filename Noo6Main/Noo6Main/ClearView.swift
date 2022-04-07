@@ -8,7 +8,7 @@
 import SwiftUI
 
 func shareButton() {
-        let url = URL(string: "https://designcode.io")
+        let url = URL(string: "https://developer.apple.com/kr/")
         let activityController = UIActivityViewController(activityItems: [url!], applicationActivities: nil)
 
         UIApplication.shared.windows.first?.rootViewController!.present(activityController, animated: true, completion: nil)
@@ -44,7 +44,7 @@ struct ClearView: View {
             
             
             Button(action: shareButton){
-                Text("이미지를 다른 사람에게 공유학")
+                Text("이미지를 다른 사람에게 공유하기")
             }
             .frame(width: 300, height: 20, alignment: .center)
             .padding()
