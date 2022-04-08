@@ -8,57 +8,56 @@
 import SwiftUI
 
 struct ImageView: View {
+    @State var currentPage: Int = 0
+    
     var body: some View {
-        
-       /* return GeometryReader {proxy in
-            ScrollView(.horizontal){
-                HStack(spacing:0){
-                    VStack(spacing:0){
-                        Text("this is Guide 자동으로 중앙정렬, 줄 바꿈을 하지만 2줄까지가 예쁨.")
-                            .frame(maxWidth: 350)
-                            .multilineTextAlignment(.center)
-                            .fixedSize(horizontal: false, vertical: true)
-                        Image("image1")
+        //                VStack {
+        //                            TabView(selection: $currentPage) {
+        //                                ForEach(0..<5) { i in
+        //                                    ZStack {
+        //                                        [Color.yellow, .red, .blue].randomElement()
+        //                                        Text("\(i)")
+        //                                    }.clipShape(Rectangle())
+        //                                }
+        //                            }.tabViewStyle(PageTabViewStyle())
+        //
+        //                            Button("Next") {
+        //                                if currentPage == 4 {
+        //                                    currentPage = 0
+        //                                    //return
+        //                                }else{
+        //                                    currentPage += 1
+        //                                }
+        //
+        //                            }
+        //                }
+        VStack{
+            TabView(selection: $currentPage) {
+                ForEach(guidelists){ i in
+                    VStack {
+                        Text(i.explain)
+                        Image(i.image)
                             .resizable()
-                            .frame(width: proxy.size.width, height: proxy.size.height-100)
-                    }
-                    
+                            .frame(width:300)
+                                        
+                    }.clipShape(Rectangle())
+                }
+            }.tabViewStyle(PageTabViewStyle())
+            Button(/*@START_MENU_TOKEN@*/"Button"/*@END_MENU_TOKEN@*/) {
+                if currentPage == guidelists.count{
+                    currentPage = 0
+                }else{
+                    currentPage = currentPage + 1
                 }
             }
-        }*/
-        ScrollView(.horizontal, showsIndicators: false){
             
             
-                    HStack(spacing:0){
-                        
-                        ForEach(guidelists, id: \.self){guide in
-                            VStack(spacing:0){
-                                Text(guide.explain)
-                                Image(guide.image)
-                                    .resizable()
-                                    .aspectRatio(contentMode: .fit)
-                                    .frame(width:360,height: 600)
-                            }
-                            
-                            
-                            
-                        }
-                        .padding()
-                    }
-            ScrollViewReader{guide in
-                Button("다음 단계 >") {withAnimation(.spring()){
-                    guide.scrollTo(1,anchor: .top)
-                }
-            }
-            }
-                    
             
-           
+        }
     }
 }
-}
 struct GuideList: Identifiable, Hashable{//가이드리스트 구조체, 이미지와 설명넣기
-    let id = UUID()
+    let id = UUID() //UUID = 고유식별자
     let image: String
     let explain: String
 }
@@ -77,3 +76,45 @@ struct ImageView_Previews: PreviewProvider {
         ImageView()
     }
 }
+
+
+/* return GeometryReader {proxy in
+ ScrollView(.horizontal){
+ HStack(spacing:0){
+ VStack(spacing:0){
+ Text("this is Guide 자동으로 중앙정렬, 줄 바꿈을 하지만 2줄까지가 예쁨.")
+ .frame(maxWidth: 350)
+ .multilineTextAlignment(.center)
+ .fixedSize(horizontal: false, vertical: true)
+ Image("image1")
+ .resizable()
+ .frame(width: proxy.size.width, height: proxy.size.height-100)
+ }
+ 
+ }
+ }
+ }*/
+
+/*ScrollView(.horizontal, showsIndicators: false){
+ HStack(spacing:0){
+ 
+ ForEach(guidelists, id: \.self){guide in
+ VStack(spacing:0){
+ Text(guide.explain)
+ Image(guide.image)
+ .resizable()
+ .aspectRatio(contentMode: .fit)
+ .frame(width:360,height: 600)
+ }
+ }
+ .padding()
+ 
+ }
+ 
+ ScrollViewReader{guide in
+ Button("다음 단계 >") {withAnimation(.spring()){
+ guide.scrollTo(2, anchor: .top)
+ }
+ }
+ }
+ }*/
