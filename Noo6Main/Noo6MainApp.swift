@@ -11,7 +11,7 @@ import SwiftUI
 struct Noo6MainApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            HomeView()
         }
     }
 }

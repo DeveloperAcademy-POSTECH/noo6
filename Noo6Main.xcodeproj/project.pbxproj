@@ -7,20 +7,32 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		552605BC27FED8EE0028C141 /* CategoryRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 552605BB27FED8EE0028C141 /* CategoryRow.swift */; };
+		552605BE27FF17FE0028C141 /* CategoryList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 552605BD27FF17FE0028C141 /* CategoryList.swift */; };
+		552605C028005F630028C141 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 552605BF28005F630028C141 /* HomeView.swift */; };
 		7953082F27FD7E78000D40DB /* Noo6MainApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7953082E27FD7E78000D40DB /* Noo6MainApp.swift */; };
-		7953083127FD7E78000D40DB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7953083027FD7E78000D40DB /* ContentView.swift */; };
 		7953083327FD7E79000D40DB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7953083227FD7E79000D40DB /* Assets.xcassets */; };
 		7953083627FD7E79000D40DB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7953083527FD7E79000D40DB /* Preview Assets.xcassets */; };
+<<<<<<< HEAD
 		795EC15828005D7D00E843D3 /* ClearView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 795EC15728005D7D00E843D3 /* ClearView.swift */; };
+=======
+		D42F483827FED4C9009FECA0 /* CategoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D42F483727FED4C9009FECA0 /* CategoryView.swift */; };
+>>>>>>> main
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		552605BB27FED8EE0028C141 /* CategoryRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryRow.swift; sourceTree = "<group>"; };
+		552605BD27FF17FE0028C141 /* CategoryList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryList.swift; sourceTree = "<group>"; };
+		552605BF28005F630028C141 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		7953082B27FD7E78000D40DB /* Noo6Main.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Noo6Main.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7953082E27FD7E78000D40DB /* Noo6MainApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Noo6MainApp.swift; sourceTree = "<group>"; };
-		7953083027FD7E78000D40DB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		7953083227FD7E79000D40DB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7953083527FD7E79000D40DB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+<<<<<<< HEAD
 		795EC15728005D7D00E843D3 /* ClearView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClearView.swift; sourceTree = "<group>"; };
+=======
+		D42F483727FED4C9009FECA0 /* CategoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryView.swift; sourceTree = "<group>"; };
+>>>>>>> main
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,7 +67,15 @@
 			children = (
 				7953082E27FD7E78000D40DB /* Noo6MainApp.swift */,
 				7953083027FD7E78000D40DB /* ContentView.swift */,
+<<<<<<< HEAD
 				795EC15728005D7D00E843D3 /* ClearView.swift */,
+=======
+				D42F483727FED4C9009FECA0 /* CategoryView.swift */,
+				552605BF28005F630028C141 /* HomeView.swift */,
+				552605BB27FED8EE0028C141 /* CategoryRow.swift */,
+				552605BD27FF17FE0028C141 /* CategoryList.swift */,
+
+>>>>>>> main
 				7953083227FD7E79000D40DB /* Assets.xcassets */,
 				7953083427FD7E79000D40DB /* Preview Content */,
 			);
@@ -140,9 +160,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+<<<<<<< HEAD
 				795EC15828005D7D00E843D3 /* ClearView.swift in Sources */,
+=======
+
+				D42F483827FED4C9009FECA0 /* CategoryView.swift in Sources */,
+>>>>>>> main
 				7953083127FD7E78000D40DB /* ContentView.swift in Sources */,
+				552605BC27FED8EE0028C141 /* CategoryRow.swift in Sources */,
 				7953082F27FD7E78000D40DB /* Noo6MainApp.swift in Sources */,
+				552605C028005F630028C141 /* HomeView.swift in Sources */,
+				552605BE27FF17FE0028C141 /* CategoryList.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
