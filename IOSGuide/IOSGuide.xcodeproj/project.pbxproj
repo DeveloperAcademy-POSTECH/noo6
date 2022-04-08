@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BF2CEDF828006804003401D6 /* GuideView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF2CEDF728006804003401D6 /* GuideView.swift */; };
 		BF35FBD827FF09D200DF92F7 /* GuideScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF35FBD727FF09D200DF92F7 /* GuideScrollView.swift */; };
 		BF5CD92D27FEDD3B00282A4F /* ImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF5CD92C27FEDD3B00282A4F /* ImageView.swift */; };
 		BFFFFB2B27FED22000A8DB3B /* IOSGuideApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFFFFB2A27FED22000A8DB3B /* IOSGuideApp.swift */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BF2CEDF728006804003401D6 /* GuideView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuideView.swift; sourceTree = "<group>"; };
 		BF35FBD727FF09D200DF92F7 /* GuideScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuideScrollView.swift; sourceTree = "<group>"; };
 		BF5CD92C27FEDD3B00282A4F /* ImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageView.swift; sourceTree = "<group>"; };
 		BFFFFB2727FED22000A8DB3B /* IOSGuide.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IOSGuide.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -61,6 +63,7 @@
 				BFFFFB2A27FED22000A8DB3B /* IOSGuideApp.swift */,
 				BFFFFB2C27FED22000A8DB3B /* ContentView.swift */,
 				BF5CD92C27FEDD3B00282A4F /* ImageView.swift */,
+				BF2CEDF728006804003401D6 /* GuideView.swift */,
 				BFFFFB3827FED28D00A8DB3B /* Bottom.swift */,
 				BFFFFB2E27FED22000A8DB3B /* Assets.xcassets */,
 				BFFFFB3027FED22000A8DB3B /* Preview Content */,
@@ -149,6 +152,7 @@
 				BF5CD92D27FEDD3B00282A4F /* ImageView.swift in Sources */,
 				BFFFFB2D27FED22000A8DB3B /* ContentView.swift in Sources */,
 				BFFFFB2B27FED22000A8DB3B /* IOSGuideApp.swift in Sources */,
+				BF2CEDF828006804003401D6 /* GuideView.swift in Sources */,
 				BFFFFB3927FED28D00A8DB3B /* Bottom.swift in Sources */,
 				BF35FBD827FF09D200DF92F7 /* GuideScrollView.swift in Sources */,
 			);

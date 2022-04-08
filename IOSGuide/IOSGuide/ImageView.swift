@@ -11,49 +11,26 @@ struct ImageView: View {
     @State var currentPage: Int = 0
     
     var body: some View {
-        //                VStack {
-        //                            TabView(selection: $currentPage) {
-        //                                ForEach(0..<5) { i in
-        //                                    ZStack {
-        //                                        [Color.yellow, .red, .blue].randomElement()
-        //                                        Text("\(i)")
-        //                                    }.clipShape(Rectangle())
-        //                                }
-        //                            }.tabViewStyle(PageTabViewStyle())
-        //
-        //                            Button("Next") {
-        //                                if currentPage == 4 {
-        //                                    currentPage = 0
-        //                                    //return
-        //                                }else{
-        //                                    currentPage += 1
-        //                                }
-        //
-        //                            }
-        //                }
-        VStack{
-            TabView(selection: $currentPage) {
-                ForEach(guidelists){ i in
-                    VStack {
-                        Text(i.explain)
-                        Image(i.image)
-                            .resizable()
-                            .frame(width:300)
-                                        
-                    }.clipShape(Rectangle())
-                }
-            }.tabViewStyle(PageTabViewStyle())
-            Button(/*@START_MENU_TOKEN@*/"Button"/*@END_MENU_TOKEN@*/) {
-                if currentPage == guidelists.count{
-                    currentPage = 0
-                }else{
-                    currentPage = currentPage + 1
-                }
-            }
-            
-            
-            
-        }
+                        VStack {
+                                    TabView(selection: $currentPage) {
+                                        ForEach(0..<5) { i in
+                                            ZStack {
+                                                [Color.yellow, .red, .blue].randomElement()
+                                                Text("\(i)")
+                                            }.clipShape(Rectangle())
+                                        }
+                                    }.tabViewStyle(PageTabViewStyle())
+        
+                                    Button("Next") {
+                                        if currentPage == 4 {
+                                            currentPage = 0
+                                            //return
+                                        }else{
+                                            currentPage += 1
+                                        }
+        
+                                    }
+                        }
     }
 }
 struct GuideList: Identifiable, Hashable{//가이드리스트 구조체, 이미지와 설명넣기
