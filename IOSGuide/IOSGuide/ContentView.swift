@@ -13,10 +13,11 @@ struct ContentView: View {
             
             VStack{
                 
-                GuideScrollView()
+                ImageView()
                 Bottom()
                 NavigationLink(destination: EmptyView()){//가이끝 뷰로 넘기기
                     //Text("맨 마지막에서 버튼")
+                    
                 }.navigationBarTitle("가이드 제목",displayMode: .inline)
                 .toolbar{
                     Button(action: {

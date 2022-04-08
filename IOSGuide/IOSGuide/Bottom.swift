@@ -7,24 +7,28 @@
 
 import SwiftUI
 
+
 struct Bottom: View {
+    private let pages = guidelists.count
+    //private let page =  현재 페이지 변수
     var body: some View {
+        
         
             VStack {
                 HStack{
-                    ZStack{
-                        Circle()
-                            .strokeBorder(Color(hue: 1.0, saturation: 0.005, brightness: 0.84), lineWidth: 1)
-                            .frame(width: 30, height: 30)
                     Button(action:{
                     
                 },label:{
                     Image(systemName: "speaker.wave.2.fill")
+                        .clipShape(Circle())
+                        .padding(5.0)
+                                    .overlay(Circle().stroke(Color.gray, lineWidth: 1)) //아이콘 주변 원 ver.1
+
                 })
                     .foregroundColor(.gray)
-                    }
+                    
                 Spacer()
-                    ZStack{
+                    ZStack{//아이콘 주변 원 ver.2
                         Circle()
                             .strokeBorder(.gray,lineWidth: 1)
                             .frame(width: 30, height: 30)
@@ -42,13 +46,17 @@ struct Bottom: View {
                     
                     }
                     Spacer()
-                    Text("3")
+                    Text("1")//--> Text("\(page)")
                     Text("/")
-                    Text("7")
+                    Text("\(pages)")
                     Spacer()
-                Button("다음 단계 >") {
-                    /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Action@*/ /*@END_MENU_TOKEN@*/
-                }
+                    ScrollViewReader{ proxy in
+                        Button("다음 단계 >") {withAnimation(.spring()){
+                            proxy.scrollTo(3,anchor: .top)
+                        }
+                    }
+                    }
+                    
             }
         }
     }

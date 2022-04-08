@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		BF35FBD827FF09D200DF92F7 /* GuideScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF35FBD727FF09D200DF92F7 /* GuideScrollView.swift */; };
-		BF35FBDA27FF0C8700DF92F7 /* GuideText.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF35FBD927FF0C8700DF92F7 /* GuideText.swift */; };
 		BF5CD92D27FEDD3B00282A4F /* ImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF5CD92C27FEDD3B00282A4F /* ImageView.swift */; };
 		BFFFFB2B27FED22000A8DB3B /* IOSGuideApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFFFFB2A27FED22000A8DB3B /* IOSGuideApp.swift */; };
 		BFFFFB2D27FED22000A8DB3B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFFFFB2C27FED22000A8DB3B /* ContentView.swift */; };
@@ -19,7 +18,6 @@
 
 /* Begin PBXFileReference section */
 		BF35FBD727FF09D200DF92F7 /* GuideScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuideScrollView.swift; sourceTree = "<group>"; };
-		BF35FBD927FF0C8700DF92F7 /* GuideText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuideText.swift; sourceTree = "<group>"; };
 		BF5CD92C27FEDD3B00282A4F /* ImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageView.swift; sourceTree = "<group>"; };
 		BFFFFB2727FED22000A8DB3B /* IOSGuide.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IOSGuide.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BFFFFB2A27FED22000A8DB3B /* IOSGuideApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IOSGuideApp.swift; sourceTree = "<group>"; };
@@ -43,6 +41,7 @@
 		BFFFFB1E27FED22000A8DB3B = {
 			isa = PBXGroup;
 			children = (
+				BF35FBD727FF09D200DF92F7 /* GuideScrollView.swift */,
 				BFFFFB2927FED22000A8DB3B /* IOSGuide */,
 				BFFFFB2827FED22000A8DB3B /* Products */,
 			);
@@ -61,8 +60,6 @@
 			children = (
 				BFFFFB2A27FED22000A8DB3B /* IOSGuideApp.swift */,
 				BFFFFB2C27FED22000A8DB3B /* ContentView.swift */,
-				BF35FBD927FF0C8700DF92F7 /* GuideText.swift */,
-				BF35FBD727FF09D200DF92F7 /* GuideScrollView.swift */,
 				BF5CD92C27FEDD3B00282A4F /* ImageView.swift */,
 				BFFFFB3827FED28D00A8DB3B /* Bottom.swift */,
 				BFFFFB2E27FED22000A8DB3B /* Assets.xcassets */,
@@ -154,7 +151,6 @@
 				BFFFFB2B27FED22000A8DB3B /* IOSGuideApp.swift in Sources */,
 				BFFFFB3927FED28D00A8DB3B /* Bottom.swift in Sources */,
 				BF35FBD827FF09D200DF92F7 /* GuideScrollView.swift in Sources */,
-				BF35FBDA27FF0C8700DF92F7 /* GuideText.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
